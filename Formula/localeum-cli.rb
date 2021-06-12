@@ -5,28 +5,28 @@
 class LocaleumCli < Formula
   desc "Localeum CLI"
   homepage "https://docs.localeum.com/cli"
-  version "1.0.6"
+  version "1.0.7"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.6/localeum-cli_Darwin_x86_64.tar.gz"
-    sha256 "972b19e37d89b1bde345d0a6a6272995b26a6e4fc464cec2944bcc51a8994f62"
+    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.7/localeum-cli_Darwin_x86_64.tar.gz"
+    sha256 "4700c18573247f9fe65604136a9cb3d716df025baa006934bfae09512a2e6228"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.6/localeum-cli_Darwin_arm64.tar.gz"
-    sha256 "ac5b20dfcaa87b5ba78b78be91a0a0681de25eb784a9ea7dcfc26c1b534ca81e"
+    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.7/localeum-cli_Darwin_arm64.tar.gz"
+    sha256 "77a5d90d3f0dc23d789337d886faf01b4d33e424f55fddee7e8fad93769b4051"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.6/localeum-cli_Linux_x86_64.tar.gz"
-    sha256 "4e9aa585ba95079ecfb0af11403f269b02e939a3c5298a96c17a05d6809b5ecf"
+    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.7/localeum-cli_Linux_x86_64.tar.gz"
+    sha256 "736dedb7fd671f62c2a67b2047775af52b2ff9e44e44a0724586fc7f1d25103a"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.6/localeum-cli_Linux_arm_v6.tar.gz"
-    sha256 "b005b4780bcc6c4250b7e008cb60b1c561a03a7d374657e6ef77771e704c4631"
+    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.7/localeum-cli_Linux_arm_v6.tar.gz"
+    sha256 "21bdb2334045482cda7317faaf66f0c840d90910ccef32cd758af385943a14e0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.6/localeum-cli_Linux_arm64.tar.gz"
-    sha256 "72d0a5bfaa3a20259db65ccc056f00473f78162f79a789506044d43d08b5ca54"
+    url "https://github.com/localeum/localeum-cli/releases/download/v1.0.7/localeum-cli_Linux_arm64.tar.gz"
+    sha256 "4fcec39d827e71a459a6f6eee7ed48baf7e294acbcfe5a45cbb20ad6a8763a49"
   end
 
   def install
